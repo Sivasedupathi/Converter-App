@@ -1,4 +1,4 @@
-package com.example.restservice.dto;
+package com.example.restservice.exchange;
 
 public class Response {
 

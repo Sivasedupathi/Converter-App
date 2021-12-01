@@ -1,15 +1,24 @@
-package com.example.restservice.service;
+package com.example.restservice.entity;
 
-public class RomanNumerals {
+public class RomanNumeral {
 
     public String digitToNumeral(int digit){
 
-        StringBuilder response = new StringBuilder();
+        StringBuilder result = new StringBuilder();
+        int remainder = digit;
 
-        for (int i = 0; i < digit; i++) {
-            response.append("I");
+        if (remainder >= 5) {
+            result.append("V");
+            remainder -= 5;
         }
-        return response.toString();
+        if (remainder == 4) {
+            result.append("IV");
+            remainder -= 4;
+        }
+        for (int i = 0; i < remainder; i++) {
+            result.append("I");
+        }
+        return result.toString();
 
     }
 

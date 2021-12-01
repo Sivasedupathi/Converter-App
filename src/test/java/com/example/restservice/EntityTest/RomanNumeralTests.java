@@ -1,14 +1,14 @@
-package com.example.restservice.ServiceTests;
+package com.example.restservice.EntityTest;
 
-import com.example.restservice.service.RomanNumerals;
+import com.example.restservice.entity.RomanNumeral;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class RomanNumeralsServiceTests {
+public class RomanNumeralTests {
 
-    RomanNumerals numerals = new RomanNumerals();
+    RomanNumeral numerals = new RomanNumeral();
 
     @Test
     public void returnOneTest() {
@@ -41,5 +41,5 @@ public class RomanNumeralsServiceTests {
         assertEquals("VII", numerals.digitToNumeral(6));
     }
 
-
+    //https://gitlab.crio.do/crio_bytes/springboot.git
 }
