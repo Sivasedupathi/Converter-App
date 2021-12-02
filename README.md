@@ -5,26 +5,35 @@
 
 # How to run the code
 
-Please use to build and execute the code. 
+Please use the below commands to build and execute the code. 
 
-gradlew build
-gradlew bootrun
+gradle build
 
-Endpoints to use the service
+gradle bootrun
+
+# Endpoints to use the service
 
 Digit to RomanNumeral
+
 http://localhost:8081/convert?value=4000 ---> Response : MMMM
+
 RomanNumeral to Digit
+
 http://localhost:8081/convert?value=MMMM ---> Response : 4000
 
 # How to execute the unit tests
 
  `gradle clean test --no-daemon` will execute the unit test cases.
 
-#Technology used
+# Technology used
+
 Java 8
+
 Junit 5
+
 Mockito
+
 Spring-boot
+
 Gradle
 
