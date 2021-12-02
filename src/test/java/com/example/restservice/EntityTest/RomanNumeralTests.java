@@ -38,8 +38,21 @@ public class RomanNumeralTests {
 
     @Test
     public void returnSixTest() {
-        assertEquals("VII", numerals.digitToNumeral(6));
+        assertEquals("VI", numerals.digitToNumeral(6));
     }
 
-    //https://gitlab.crio.do/crio_bytes/springboot.git
+    @Test
+    public void returnNineTest() {
+        assertEquals("IX", numerals.digitToNumeral(9));
+    }
+
+    @Test
+    public void returnNumeralsTest() {
+        assertEquals("XC", numerals.digitToNumeral(90));
+        assertEquals("CM", numerals.digitToNumeral(900));
+        assertEquals("MCMIII", numerals.digitToNumeral(1903));
+        assertEquals("MCMXCVII", numerals.digitToNumeral(1997));
+        assertEquals("MMMM", numerals.digitToNumeral(4000));
+    }
+
 }

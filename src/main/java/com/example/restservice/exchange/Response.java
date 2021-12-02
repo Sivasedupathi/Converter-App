@@ -2,9 +2,10 @@ package com.example.restservice.exchange;
 
 public class Response {
 
-    int convertedValue;
+    String convertedValue;
 
-    public Response(int convertedValue) {
+    public Response(String convertedValue) {
         this.convertedValue = convertedValue;
     }
+
 }
