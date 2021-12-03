@@ -21,6 +21,8 @@ RomanNumeral to Digit
 
 http://localhost:8081/convert?value=MMMM ---> Response : 4000
 
+Exception: 0 and negative values will throw error message 'Value should be between 1 and 4000' or 'Value should be between I and MMMM'.
+
 # How to execute the unit tests
 
  `gradle clean test --no-daemon` will execute the unit test cases.
